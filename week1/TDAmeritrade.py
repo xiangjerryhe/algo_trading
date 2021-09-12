@@ -4,7 +4,6 @@ from tda.streaming import StreamClient
 import asyncio
 
 def make_webdriver():
-    # Import selenium here because it's slow to import
     from selenium import webdriver
     driver = webdriver.Chrome("<directory where you downloaded chromedriver>")
     return driver
@@ -46,7 +45,6 @@ async def process_options_trades(msg):
     if <time is before 9:51 am>:
          <update on redis the lowest traded price for all strikes>
 
-
 async def read_stream():
     await stream_client.login()
     await stream_client.quality_of_service(StreamClient.QOSLevel.EXPRESS)
@@ -57,7 +55,7 @@ async def read_stream():
     stream_client.add_timesale_options_handler(process_options_trades)
     await stream_client.level_one_futures_subs(['/VXU21','/ZBU21','/ESU21', '/NQU21', '/YMU21'])
     await stream_client.level_one_option_subs(['SPY','XLU'])
-    await stream_client.level_one_option_subs(['SPY','XLU'])
+    await stream_client.timesale_options_subs(['SPY','XLU'])
     await stream_client.listed_book_subs(['XLRE', 'SPY', 'XLU'])
     await stream_client.nasdaq_book_subs(['QQQ', 'AAPL', 'MSFT'])
     while True:
