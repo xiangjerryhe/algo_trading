@@ -11,6 +11,7 @@ symbol_chart = pd.DataFrame([
    ["Dow Futures /Dec 2021", "YM=F", '/YMZ21'],
    ["Nasdaq Futures /Dec 2021","NQ=F", "/NQZ21"],
    ["Russel Futures /Dec 2021", "RTY=F", "/RTYZ21"],
+   ["13 week Treasury Bill", "^IRX", None],
    ["2 yr Treasury Futures /Dec 2021","ZT=F","/ZTZ21"],
    ["5 yr Treasury Futures /Dec 2021", "ZF=F","/ZFZ21"],
    ["5 yr Treasury Yield", "^FVX", None],
@@ -29,5 +30,6 @@ symbol_chart = pd.DataFrame([
    ["Wheat Futures /Dec 2021", "ZW=F", ],
    ["Gold futures /Dec 2021", "GC=F","/GCZ21"],
    ["Aluminum Futures /Nov 2021", "ALI=F",], 
+   ["Dollar Yen", "JPY=X",],
    ["Bitcoin", "BTC-USD", None]
 ], columns=['description', 'yfinance ticker symbol', 'TDAmeritrade ticker symbol'])
