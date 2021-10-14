@@ -4,6 +4,7 @@ symbol_chart = pd.DataFrame([
    ["S&P 500 atm implied vol","^VIX", None],
    ["Nasdaq 100 atm implied vol","^VXN",None],
    ["Korea stock index / Kospi", "^KS11", None],
+   ["Hong Kong stock index /Hang Seng", "^HSI", None],
    ["Samsung", "005930.KS", None], 
    ["Sk Hynix", "000660.KS", None],
    ["S&P Futures /Dec 2021","ES=F",'/ESZ21'],
@@ -23,8 +24,10 @@ symbol_chart = pd.DataFrame([
    ["Natural Gas Futures /Nov 2021","NG=F", "NGZ21"],
    ["Cotton Futures /Dec 2021", "CT=F", ],
    ["Lumber Futures /Jan 2022","LBS=F",],
+   ["Live Cattle Futures,Dec-2021", "LE=F", "LEZ21"]
    ["Corn Futures /Dec 2021", "ZC=F", ],
    ["Wheat Futures /Dec 2021", "ZW=F", ],
    ["Gold futures /Dec 2021", "GC=F","/GCZ21"],
+   ["Aluminum Futures /Nov 2021", "ALI=F",], 
    ["Bitcoin", "BTC-USD", None]
 ], columns=['description', 'yfinance ticker symbol', 'TDAmeritrade ticker symbol'])
