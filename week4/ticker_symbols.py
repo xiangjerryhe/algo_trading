@@ -22,10 +22,11 @@ symbol_chart = pd.DataFrame([
    ["Copper Futures /Dec 2021", "HG=F","/HGZ21"],
    ["Iron Futures /Dec 2021", "HG=F","/HGZ21"],
    ["WTI Oil Futures /Dec 2021",'CL=F', '/CLZ21'],
-   ["Natural Gas Futures /Nov 2021","NG=F", "NGZ21"],
+   ["Natural Gas Futures /Nov 2021","NG=F", "/NGZ21"],
    ["Cotton Futures /Dec 2021", "CT=F", ],
    ["Lumber Futures /Jan 2022","LBS=F",],
-   ["Live Cattle Futures,Dec-2021", "LE=F", "LEZ21"]
+   ["Live Cattle Futures,Dec-2021", "LE=F", "/LEZ21"],
+   ["CSI energy index", "399928.SZ",], # a monitor of Chinese coal situation
    ["Corn Futures /Dec 2021", "ZC=F", ],
    ["Wheat Futures /Dec 2021", "ZW=F", ],
    ["Gold futures /Dec 2021", "GC=F","/GCZ21"],
